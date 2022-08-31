@@ -1,0 +1,215 @@
+@font-face {
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/inter-400.woff2) format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/inter-700.woff2) format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url(../fonts/inter-900.woff2) format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "inter";
+  font-style: italic;
+  font-weight: 400;
+  src: url(../fonts/inter-400.woff2) format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "inter";
+  font-style: italic;
+  font-weight: 700;
+  src: url(../fonts/inter-700.woff2) format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "inter";
+  font-style: italic;
+  font-weight: 900;
+  src: url(../fonts/inter-900.woff2) format("woff2");
+  font-display: swap;
+}
+
+html {
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  min-width: 100%;
+  margin: 0;
+  background-color: #FFCBD8;
+}
+
+.wrapper {
+  width: 1366px;
+  margin: 0 auto;
+}
+
+/* Навигация */
+
+.navigation {
+  display: flex;
+  align-items: center;
+  width: 1170px;
+  height: 103.72px;
+  padding: 0 98px 0.28px 98px;
+  background-color: #FEAFC3;
+}
+
+.logo-link:hover {
+  opacity: 0.6;
+}
+
+.logo-link:active {
+  opacity: 0.3;
+}
+
+.logo-link:focus-visible {
+  outline: 2px solid #2D3440;
+  outline-offset: 10px;
+  border-radius: 30px;
+}
+
+.navigation-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Навигация / Список "menu" */
+
+.navigation-menu-list {
+  Font-family: "inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px ;
+  line-height: 20px;
+  display: flex;
+  margin: 0;
+  margin-left: 16px;
+  padding: 0;
+  list-style-type: none;
+  outline: none;
+}
+
+.navigation-menu-link {
+  padding: 8px 16px 8px 16px;
+  color: #2D3440;
+  text-decoration: none;
+  border: 2px solid #FEAFC3;
+  border-radius: 30px;
+}
+
+.navigation-menu-link:hover {
+  background: rgba(252, 252, 252, 0.5);
+  border-radius: 30px;
+}
+
+.navigation-menu-link:active {
+  background-color: #FCFCFC;
+  border-radius: 30px;
+}
+
+.navigation-menu-link:focus-visible {
+  background: rgba(252, 252, 252, 0.5);
+  border: 2px solid #2D3440;
+  border-radius: 30px;
+  outline: none;
+}
+
+/* Навигация / Список "user" */
+
+.navigation-user-list {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  margin: 0;
+  margin-left: 142px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navigation-user-item {
+  margin-left: 16px;
+}
+
+.contacts-telephone {
+  Font-family: "inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px ;
+  line-height: 20px;
+  color: #2D3440;
+  text-decoration: none;
+}
+
+.contacts-telephone:hover {
+  opacity: 0.6;
+}
+
+.contacts-telephone:active {
+  opacity: 0.3;
+}
+
+.contacts-telephone:focus-visible {
+  outline: 2px solid #2D3440;
+  outline-offset: 3px;
+  border-radius: 30px;
+}
+
+.navigation-user-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  Font-family: "inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px ;
+  line-height: 20px;
+  color: #2D3440;
+  border: 2px solid #FEAFC3;
+  background: rgba(252, 252, 252, 0.3);
+  border-radius: 30px;
+  padding: 0 20px 0 20px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.user-button-search {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  padding: 0;
+}
+
+.user-button-icon {
+  margin-right: 4px;
+}
+
+.navigation-user-button:hover {
+  background: rgba(252, 252, 252, 0.5);
+}
+
+.navigation-user-button:active {
+  background: #FCFCFC;
+}
+
+.navigation-user-button:focus-visible {
+  background: rgba(252, 252, 252, 0.5);
+  border: 2px solid #2D3440;
+  outline: none;
+}
