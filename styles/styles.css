@@ -59,7 +59,57 @@ body {
   margin: 0 auto;
 }
 
-/* Навигация */
+.page-title {
+  Font-family: "inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px ;
+  line-height: 46px;
+  color: #2D3440;
+  padding: 0;
+  margin: 0
+}
+
+main {
+  background-color: #FEAFC3;
+}
+
+.page-button {
+  Font-family: "inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px ;
+  line-height: 20px;
+  color: #2D3440;
+  margin: 0;
+  padding: 12px 32px 12px 32px;
+  background-color: #FCFCFC;
+  border: 4px solid rgba(252, 252, 252, 0.4);
+  box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+  border-radius: 26px;
+  cursor: pointer;
+}
+
+.page-button:hover {
+  background: rgba(252, 252, 252, 0.4);
+  border: 4px solid #FCFCFC;
+  box-shadow: 0px 4px 15px rgba(133, 133, 133, 0.15);
+}
+
+.page-button:active {
+  background: #FCFCFC;
+  border: 2px solid #2D3440;
+  box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+}
+
+.page-button:focus-visible {
+  background: rgba(252, 252, 252, 0.5);
+  border: 2px solid #2D3440;
+  box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+  outline: none;
+}
+
+/* header / Навигация */
 
 .navigation {
   display: flex;
@@ -212,4 +262,71 @@ body {
   background: rgba(252, 252, 252, 0.5);
   border: 2px solid #2D3440;
   outline: none;
+}
+
+
+/* main / Акции */
+
+.shares-title {
+  text-align: center;
+  width: 1170px;
+  min-height: 92px;
+  margin-bottom: 55px;
+}
+
+.shares {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  padding: 0 98px 80px 98px;
+  margin: 0;
+}
+
+.shares-list {
+  display: grid;
+  grid-template-columns: 570px 570px;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.shares-item {
+  position: relative;
+  width: 498px;
+  height: 196px;
+  padding: 36px;
+  margin: 0;
+  background-color: #FF7799;
+  border-radius: 16px;
+}
+
+.shares-item-title {
+  Font-family: "inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px ;
+  line-height: 30px;
+  color: #2D3440;
+  padding: 0;
+  margin: 0 0 28px 0;
+}
+
+.shares-item-description {
+  Font-family: "inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px ;
+  line-height: 22px;
+  color: #2D3440;
+  width: 328px;
+  height: 66px;
+  padding: 0;
+  margin: 0 0 28px 0;
+}
+
+.shares-image {
+  position: absolute;
+  top: 0%;
+  left: 61.5%;
 }
