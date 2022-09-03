@@ -84,29 +84,29 @@ main {
   margin: 0;
   padding: 12px 32px 12px 32px;
   background-color: #FCFCFC;
-  border: 4px solid rgba(252, 252, 252, 0.4);
+  outline: 4px solid rgba(252, 252, 252, 0.4);
   box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
   border-radius: 26px;
   cursor: pointer;
+  border: none;
 }
 
 .page-button:hover {
   background: rgba(252, 252, 252, 0.4);
-  border: 4px solid #FCFCFC;
+  outline: 4px solid #FCFCFC;
   box-shadow: 0px 4px 15px rgba(133, 133, 133, 0.15);
 }
 
 .page-button:active {
   background: #FCFCFC;
-  border: 2px solid #2D3440;
+  outline: 2px solid #2D3440;
   box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
 }
 
 .page-button:focus-visible {
   background: rgba(252, 252, 252, 0.5);
-  border: 2px solid #2D3440;
+  outline: 2px solid #2D3440;
   box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
-  outline: none;
 }
 
 /* header / Навигация */
@@ -331,4 +331,15 @@ main {
   left: 61.5%;
 }
 
-{}
+
+
+.popular-products {
+
+}
+
+.popular-products-title {
+  text-align: center;
+  width: 1170px;
+  min-height: 92px;
+  margin-bottom: 55px;
+}
