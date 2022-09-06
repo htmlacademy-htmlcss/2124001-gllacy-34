@@ -78,6 +78,7 @@ body {
   line-height: 22px;
   margin: 0;
   padding: 0;
+  color: #565C66;
 }
 
 main {
@@ -95,7 +96,7 @@ main {
   padding: 12px 32px 12px 32px;
   background-color: #FCFCFC;
   outline: 4px solid rgba(252, 252, 252, 0.4);
-  box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
   border-radius: 26px;
   cursor: pointer;
   border: none;
@@ -104,13 +105,13 @@ main {
 .page-button:hover {
   background: rgba(252, 252, 252, 0.4);
   outline: 4px solid #FCFCFC;
-  box-shadow: 0px 4px 15px rgba(133, 133, 133, 0.15);
+  box-shadow: 0 4px 15px rgba(133, 133, 133, 0.15);
 }
 
 .page-button:active {
   background: #FCFCFC;
   outline: 2px solid #2D3440;
-  box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
 }
 
 .page-button:focus-visible {
@@ -118,6 +119,46 @@ main {
   outline: 2px solid #2D3440;
   box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
   outline: none;
+}
+
+.additional-button {
+  Font-family: "inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px ;
+  line-height: 20px;
+  padding: 12px 32px 12px 32px;
+  margin: 0;
+  color: #FCFCFC;
+  background-color: #FF2F64;
+  border: none;
+  outline: 4px solid rgba(255, 47, 100, 0.3);
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+  border-radius: 26px;
+  cursor: pointer;
+}
+
+.additional-button:hover {
+  color: #2D3440;
+  background-color: #FCFCFC4D;
+  outline: 4px solid #FF2F64;
+}
+
+.additional-button:active {
+  color: #FCFCFC;
+  background-color: #FEAFC3;
+  outline: 2px solid #2D3440;
+}
+
+.additional-button:focus-visible {
+  color: #FCFCFC;
+  background-color: #FF2F64;
+  outline: 2px solid #2D3440;
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
 }
 
 /* header / Навигация */
@@ -151,7 +192,7 @@ main {
   align-items: center;
 }
 
-/* Навигация / Список "menu" */
+/* header / Навигация / Список "menu" */
 
 .navigation-menu-list {
   Font-family: "inter";
@@ -192,7 +233,7 @@ main {
   outline: none;
 }
 
-/* Навигация / Список "user" */
+/* header / Навигация / Список "user" */
 
 .navigation-user-list {
   display: flex;
@@ -274,6 +315,7 @@ main {
   outline: none;
 }
 
+
 /* main / Акции */
 
 .shares-title {
@@ -333,6 +375,7 @@ main {
   right: 0;
 }
 
+
 /* main / Популярные товары */
 
 .popular-products {
@@ -375,7 +418,7 @@ main {
   padding: 130px 37px 21px 37px;
   border-radius: 8px;
   border: 3px solid #FCFCFC;
-  min-height: 124px;
+  height: 100%;
   outline: none;
 }
 
@@ -409,7 +452,7 @@ main {
   text-align: center;
   width: 190px;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 48px;
 }
 
 .products-item-price {
@@ -482,6 +525,7 @@ main {
   fill: #565C66;
 }
 
+
 /* main / Особенности */
 
 .peculiarities-background {
@@ -551,5 +595,106 @@ main {
 .peculiarities-descriotion {
   width: 442px;
   text-align: start;
+}
 
+
+/* main / Новостной блок */
+
+.news-block {
+  display: grid;
+  grid-template-columns: 570px 570px;
+  gap: 30px;
+  width: 1170px;
+  margin: 0 98px 80px 98px;
+  padding: 0;
+}
+
+/* main / Новостной блок / Новости */
+
+.news {
+  height: 160px;
+  padding: 32px 231px 30px 32px;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  background-image: url(../images/png/background-ice-cream.png);
+  background-repeat: no-repeat;
+  border: none;
+}
+
+.news-link {
+  text-decoration: none;
+  min-height: 220px;
+  border: 2px solid #FEAFC3;
+  border-radius: 16px;
+  outline: none;
+}
+
+.news-link:hover {
+  opacity: 0.8;
+}
+
+.news-link:active {
+  opacity: 0.6;
+}
+
+.news-link:focus-visible {
+  border: 2px solid #000000;
+}
+
+.news-descriotion {
+  margin-bottom: 12.22px;
+}
+
+.news-title {
+  Font-family: "inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px ;
+  line-height: 30px;
+  color: #2D3440;
+  padding: 0;
+  margin: 0;
+}
+
+/* main / Новостной блок / Новостная рассылка */
+
+.newsletter-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/png/background-subscribe.png);
+  width: 570px;
+  height: 224px;
+  border-radius: 16px;
+}
+
+.newsletter {
+  width: 506px;
+  height: 160px;
+  padding: 26px;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+}
+
+.newsletter-descriotion {
+  margin-bottom: 52px;
+}
+
+.newsletter-form {
+  margin: 0;
+  padding: 0;
+}
+
+.field {
+  line-height: 22px;
+  color: #000000;
+  width: 300px;
+  margin-right: 14px;
+  padding: 14px 16px 14px 16px;
+  border: 1px solid #B9B9B9;
+  border-radius: 4px;
+}
+
+input::placeholder {
+  color: #B9B9B9;
 }
