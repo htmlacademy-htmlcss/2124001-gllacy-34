@@ -78,7 +78,7 @@ body {
   line-height: 22px;
   margin: 0;
   padding: 0;
-  color: #565C66;
+  color: #2D3440;
 }
 
 main {
@@ -117,7 +117,7 @@ main {
 .page-button:focus-visible {
   background: rgba(252, 252, 252, 0.5);
   outline: 2px solid #2D3440;
-  box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
   outline: none;
 }
 
@@ -316,6 +316,208 @@ main {
 }
 
 
+/* main / Слайдер */
+
+.slider-section {
+  position: relative;
+  text-align: center;
+  width: 1170px;
+  min-height: 554px;
+  padding: 0;
+  margin: 0 98px 80px 98px;
+}
+
+.slider-block {
+  width: 540px;
+  text-align: start;
+  padding-bottom: 138px;
+}
+
+.slider-one {
+  display: ;
+}
+
+.slider-two {
+  display: none;
+}
+
+.slider-three {
+  display:  none;
+}
+
+.slider-title {
+  Font-family: "inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px ;
+  line-height: 46px;
+  color: #2D3440;
+  padding: 136px 0 24px 70px;
+  margin: 0;
+}
+
+.slider-description {
+  font-size: 18px;
+  line-height: 24px;
+  padding: 0 56px 48px 70px;
+  margin: 0;
+}
+
+.slider-button {
+  margin: 0 56px 0 70px;
+}
+
+.slider {
+  position: absolute;
+  top: 20%;
+  right: -40px;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slider-item {
+  position: relative;
+  background-color: #FFCBD8;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  opacity: 0.4;
+  margin-right: 41px;
+}
+
+.slider-item:first-child {
+  background-color: #FFCBD8;
+  width: 312px;
+  height: 312px;
+  border-radius: 50%;
+  opacity: 1;
+  margin-right: 56px;
+}
+
+.slider-image-one {
+  position: absolute;
+  top: -33%;
+  background-image: url(../images/png/slider-image-one.png);
+  width: 306px;
+  height: 507px;
+}
+
+.slider-image-one-little {
+  position: absolute;
+  top: -25%;
+  right: 20%;
+  background-image: url(../images/png/slider-image-one-little.png);
+  width: 66px;
+  height: 150px;
+}
+
+.slider-image-two {
+  position: absolute;
+  top: -33%;
+  background-image: url(../images/png/slider-image-two.png);
+  width: 306px;
+  height: 507px;
+}
+
+.slider-image-two-little {
+  position: absolute;
+  top: -25%;
+  right: 20%;
+  background-image: url(../images/png/slider-image-two-little.png);
+  width: 66px;
+  height: 150px;
+}
+
+.slider-image-three {
+  position: absolute;
+  top: -33%;
+  background-image: url(../images/png/slider-image-three.png);
+  width: 306px;
+  height: 507px;
+}
+
+.slider-image-three-little {
+  position: absolute;
+  top: -25%;
+  right: 20%;
+  background-image: url(../images/png/slider-image-three-little.png);
+  width: 66px;
+  height: 150px;
+  opacity: none;
+}
+
+.slider-pagination {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.slider-pagination-item:not(:last-child)  {
+  padding-right: 8px;
+}
+
+.slider-pagination-button {
+  width: 12px;
+  height: 12px;
+  background-color: #FCFCFC;
+  color: #FCFCFC;
+  opacity: 0.3;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+}
+
+.slider-pagination-button-current {
+  opacity: 1;
+}
+
+.slider-social-list {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.item-social-list:not(:last-child)  {
+  padding-right: 16px;
+}
+
+.item-social-link {
+
+}
+
+.item-social-image {
+  outline: 2px solid rgba(252, 252, 252, 0.3);
+  border-radius: 24px;
+  padding: 0;
+  margin: 0;
+  fill: #FCFCFC;
+}
+
+.item-social-image:hover {
+  background-color: #2D3440;
+}
+
+.item-social-image:active {
+  background-color: #2D3440;
+  opacity: 0.5;
+}
+
+.item-social-link:focus-visible {
+  background-color: #2D3440;
+  border-radius: 50;
+  outline: 2px solid #2D3440;
+}
+
 /* main / Акции */
 
 .shares-title {
@@ -449,6 +651,7 @@ main {
 }
 
 .products-item-description {
+  color: #565C66;
   text-align: center;
   width: 190px;
   margin: 0;
@@ -593,6 +796,7 @@ main {
 }
 
 .peculiarities-descriotion {
+  color: #565C66;
   width: 442px;
   text-align: start;
 }
@@ -642,6 +846,7 @@ main {
 }
 
 .news-descriotion {
+  color: #565C66;
   margin-bottom: 12.22px;
 }
 
@@ -678,6 +883,7 @@ main {
 
 .newsletter-descriotion {
   margin-bottom: 52px;
+  color: #565C66;
 }
 
 .newsletter-form {
