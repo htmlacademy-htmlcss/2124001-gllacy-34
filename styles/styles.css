@@ -57,6 +57,7 @@ body {
 .wrapper {
   width: 1366px;
   margin: 0 auto;
+  background-color: #FEAFC3;
 }
 
 .page-title {
@@ -82,7 +83,7 @@ body {
 }
 
 main {
-  background-color: #FEAFC3;
+
 }
 
 .page-button {
@@ -248,7 +249,7 @@ main {
   margin-left: 16px;
 }
 
-.contacts-telephone {
+.navigation-contacts-telephone {
   Font-family: "inter";
   font-style: normal;
   font-weight: 700;
@@ -258,15 +259,15 @@ main {
   text-decoration: none;
 }
 
-.contacts-telephone:hover {
+.navigation-contacts-telephone:hover {
   opacity: 0.6;
 }
 
-.contacts-telephone:active {
+.navigation-contacts-telephone:active {
   opacity: 0.3;
 }
 
-.contacts-telephone:focus-visible {
+.navigation-contacts-telephone:focus-visible {
   outline: 2px solid #2D3440;
   outline-offset: 3px;
   border-radius: 30px;
@@ -367,6 +368,66 @@ main {
   margin: 0 56px 0 70px;
 }
 
+.slider-button-arrow {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 45%;
+  left: 46.05%;
+  z-index: 5;
+  cursor: pointer;
+  background: rgba(252, 252, 252, 0.3);
+  border-radius: 50%;
+  border: 2px solid #FCFCFC;
+  padding: 0;
+  outline: none;
+}
+
+.slider-button-arrow:hover {
+  background-color: #FCFCFC;
+}
+
+.slider-button-arrow:active {
+  background-color: rgba(252, 252, 252, 0.5);
+  border: 2px solid rgba(252, 252, 252, 0.5);
+}
+
+.slider-button-arrow:focus-visible {
+  background-color: rgba(252, 252, 252, 0.5);
+  border: 2px solid #2D3440;
+}
+
+
+.slider-button-next {
+  left: 72.8%;
+}
+
+.slider-button-prev {
+
+}
+
+.slider-button-svg {
+  padding: 12.66px 14px 12.67px 16px;
+  fill: #FCFCFC;
+}
+
+.slider-button-svg-prev {
+  padding: 12.66px 14px 12.67px 16px;
+  transform:scale(-1);
+}
+
+.slider-button-svg:hover {
+  fill: #2D3440;
+}
+
+.slider-button-svg:active {
+  fill: #2D3440;
+}
+
+.slider-button-svg:focus-visible {
+  fill: #2D3440;
+}
+
 .slider {
   position: absolute;
   top: 20%;
@@ -446,7 +507,6 @@ main {
   background-image: url(../images/png/slider-image-three-little.png);
   width: 66px;
   height: 150px;
-  opacity: none;
 }
 
 .slider-pagination {
@@ -903,4 +963,148 @@ main {
 
 input::placeholder {
   color: #B9B9B9;
+}
+
+/* main / Блок Доставки */
+
+.delivery-block {
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  height: 534px;
+  background-color: #FCFCFC;
+  margin: 0 98px 80px 98px;
+  background-image: url(../images/png/delivery-block-background.png);
+  border-radius: 16px;
+}
+
+.delivery-information {
+  width: 372px;
+  height: 303px;
+  margin: 167px 0 64px 100px;
+}
+
+.delivery-title {
+  margin-bottom: 24px;
+}
+
+.delivery-form-block {
+  width: 420px;
+  height: 326px;
+  background-color: #FCFCFC;
+  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
+  border-radius: 8px;
+  margin: 64px 64px 64px 0;
+  padding: 40px;
+}
+
+.delivery-form-description {
+  margin-bottom: 32px;
+}
+
+.delivery-form {
+  display: grid;
+  grid-template-columns: 117px 287px; /* Можно сделать repeat (2, 360px); */
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-form-lable {
+  Font-family: "inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px ;
+  line-height: 20px;
+  color: #2D3440;
+}
+
+.modal-form-field {
+  Font-family: "inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px ;
+  line-height: 20px;
+  color: #B9B9B9;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #B9B9B9;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+}
+
+.date-field {
+  width: 85px;
+  padding: 14px 16px 14px 16px;
+}
+
+.telephone-field {
+  width: 143px;
+  padding: 14px 128px 14px 16px;
+}
+
+.address-field {
+  width: 243px;
+  padding: 14px 161px 14px 16px;
+}
+
+.button-delivery {
+  text-align: center;
+  margin-left: 135px;
+}
+
+/* footer / Блок Обратной Связи */
+
+
+.contacts-block {
+  display: flex;
+  align-items: center;
+  width: 1170px;
+  height: 492px;
+  background-color: #FCFCFC;
+  margin: 0 98px 153px 98px;
+  background-image: url(../images/png/contacts-block-background.png);
+  border-radius: 16px;
+}
+
+.contacts-information {
+  width: 263px;
+  height: 284px;
+  background-color: #FCFCFC;
+  border-radius: 16px;
+  margin: 64px;
+  padding: 40px;
+}
+
+.contacts-description {
+  margin-bottom: 12px;
+}
+
+.contacts-address-description {
+  Font-family: "inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px ;
+  line-height: 24px;
+  color: #2D3440;
+  margin-bottom: 24px;
+}
+
+.contacts-telephone-description {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.contacts-telephone {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.button-contacts {
+  margin: 32px 0 2px 0;
 }

@@ -36,7 +36,7 @@
 
             <ul class="navigation-user-list">
               <li class="navigation-user-item">
-                <a class="contacts-telephone" href="tel:+78005558628">+7 800 555-86-28</a>
+                <a class="navigation-contacts-telephone" href="tel:+78005558628">+7 800 555-86-28</a>
               </li>
               <li class="navigation-user-item">
                 <button class="navigation-user-button user-button-search">
@@ -165,6 +165,12 @@
             </ol>
           </div>
 
+          <button class="slider-button-arrow slider-button-prev" type="button">
+            <svg class="slider-button-svg slider-button-svg-prev" width="7" height="12" viewBox="0 0 7 12" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.13526.8647C.87556.605.45451.605.19481.8647c-.2597.25969-.2597.68075 0 .94045L4.3961 6.00643.19477 10.2077c-.2597.2597-.2597.6808 0 .9405.2597.2597.68076.2597.94046 0l4.66871-4.66871a.75643.75643 0 0 0 .00284-.00283c.2597-.2597.2597-.68075 0-.94045L1.13526.8647Z"/></svg>
+          </button>
+          <button class="slider-button-arrow slider-button-next" type="button">
+            <svg class="slider-button-svg" width="7" height="12" viewBox="0 0 7 12" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.13526.8647C.87556.605.45451.605.19481.8647c-.2597.25969-.2597.68075 0 .94045L4.3961 6.00643.19477 10.2077c-.2597.2597-.2597.6808 0 .9405.2597.2597.68076.2597.94046 0l4.66871-4.66871a.75643.75643 0 0 0 .00284-.00283c.2597-.2597.2597-.68075 0-.94045L1.13526.8647Z"/></svg>
+          </button>
           <ul class="slider-social-list">
             <li class="item-social-list">
               <a class="item-social-link" href="https://t.me/htmlacademy">
@@ -183,14 +189,6 @@
             </li>
           </ul>
         </section>
-
-
-
-
-
-
-
-
 
               <!-- Акции -->
 
@@ -316,9 +314,65 @@
             </div>
           </div>
         </div>
+
+                <!-- Блок Доставки -->
+
+        <div class="delivery-block">
+          <div class="delivery-information">
+            <h2 class="delivery-title page-title">Доставка любимого мороженого на дом</h2>
+            <p class="delivery-description page-description">Хочется полакомиться любимым десертом,<br>но нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
+          </div>
+          <div class="delivery-form-block">
+            <p class="delivery-form-description page-description">Укажите адрес и дату доставки, и мы свяжемся<br>с вами, чтобы подтвердить заказ.</p>
+            <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
+              <div class="field-group field-group-date">
+                <label class="modal-form-lable" for="date">Дата</label>
+                <input class="modal-form-field date-field" type="datetime" id="date" name="date" placeholder="01.04.2020">
+              </div>
+              <div class="field-group field-group-telephone">
+                <label class="modal-form-lable" for="telephone">Телефон</label>
+                <input class="modal-form-field telephone-field" type="tel" id="telephone" name="telephone" placeholder="+7 800 999-00-00">
+              </div>
+              <div class="field-group field-group-address">
+                <label class="modal-form-lable" for="address">Адрес</label>
+                <input class="modal-form-field address-field" type="text" id="address" name="address" placeholder="ул. Большая Конюшенная, 19/8">
+              </div>
+            </form>
+            <button class="button-delivery additional-button" type="submit">
+              <span class="subscribe">Отправить</span>
+            </button>
+          </div>
+        </div>
       </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
       <footer>
 
+                <!-- Блок Обратной Связи -->
+
+        <div class="contacts-block">
+          <div class="contacts-information">
+            <p class="contacts-description page-description">Адрес главного офиса<br>и офлайн-магазина:</p>
+            <address class="contacts-address-description">наб. реки Карповки,<br>5 лит П, Санкт-Петербург</address>
+            <p class="contacts-description page-description">Для заказов по телефону:</p>
+            <a class="contacts-telephone navigation-contacts-telephone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+            <p class="contacts-telephone-description page-description">(с 10 до 20 ежедневно)</p>
+            <button class="button-contacts additional-button" type="submit">
+              <span class="feedback-form">Форма обратной связи</span>
+            </button>
+          </div>
+        </div>
       </footer>
     </div>
   </body>
