@@ -552,7 +552,7 @@ main {
 }
 
 .item-social-link {
-
+  display: block;
 }
 
 .item-social-image {
@@ -1057,8 +1057,8 @@ input::placeholder {
   margin-left: 135px;
 }
 
-/* footer / Блок Обратной Связи */
 
+/* footer / Блок Обратной Связи */
 
 .contacts-block {
   display: flex;
@@ -1066,7 +1066,7 @@ input::placeholder {
   width: 1170px;
   height: 492px;
   background-color: #FCFCFC;
-  margin: 0 98px 153px 98px;
+  margin: 0 98px 0 98px;
   background-image: url(../images/png/contacts-block-background.png);
   border-radius: 16px;
 }
@@ -1107,4 +1107,107 @@ input::placeholder {
 
 .button-contacts {
   margin: 32px 0 2px 0;
+}
+
+/* footer / Подвал */
+
+.social-block {
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  min-height: 57px;
+  margin: 0 98px 0 98px;
+  padding: 48px 0 48px 0;
+}
+
+.social-list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  height: 24px;
+}
+
+.menu-list {
+  display: grid;
+  grid-template-columns: auto auto;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item-menu-list {
+  height: 20px;
+}
+
+.item-menu-link {
+  Font-family: "inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px ;
+  line-height: 20px;
+  text-decoration: none;
+  color: #2D3440;
+  padding-left: 24px;
+  border-bottom: 2px solid #FEAFC3;
+  outline: none;
+}
+
+.item-menu-link:hover {
+  opacity: 0.6;
+}
+
+.item-menu-link:active {
+  opacity: 0.3;
+}
+
+.item-menu-link:focus-visible {
+  color: #FF2F64;
+}
+
+.for-suppliers {
+  font-weight: 700;
+  background-image: url(../images/svg/heart-for-suppliers.svg);
+  background-repeat: no-repeat;
+  background-position: -1px;
+}
+
+.footer-logo {
+  fill: #2D3440;
+}
+
+.footer-logo-link:hover, .made-in-link:hover {
+  opacity: 0.6;
+}
+
+.footer-logo-link:active, .made-in-link:active {
+  opacity: 0.3;
+}
+
+.footer-logo-link:focus-visible {
+  outline: 2px solid #2D3440;
+  outline-offset: 5px;
+  border-radius: 30px;
+}
+
+.made-in {
+  Font-family: "inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px ;
+  line-height: 16px;
+  color: #2D3440;
+}
+
+.made-in-link {
+  color: #2D3440;
+  text-decoration: none;
+  border-bottom: 1px solid #2D3440;
+  outline: none;
+}
+
+.made-in-link:focus-visible {
+  border-bottom: 1px solid #FCFCFC;
+  outline-offset: 5px;
+  border-radius: 0;
 }
