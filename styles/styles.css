@@ -1211,3 +1211,230 @@ input::placeholder {
   outline-offset: 5px;
   border-radius: 0;
 }
+
+
+        /* Каталог */
+
+.catalog-navigation {
+  margin-bottom: 32px;
+}
+
+.page-filter-text {
+  Font-family: "inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px ;
+  line-height: 16px;
+  color: #2D3440;
+}
+
+.breadcrumbs-block {
+  width: 1170px;
+  margin: 0 98px 40px 98px;
+}
+
+.breadcrumbs {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  margin-bottom: 16px;
+  padding: 0;
+}
+
+.breadcrumbs-item {
+  font-weight: 700;
+  width: 86px;
+}
+
+.breadcrumbs-link {
+  text-decoration: none;
+  color: #2D3440;
+}
+
+        /* Блок фильтрации */
+
+.catalog-filter {
+  display: grid;
+  grid-template-columns: 196px 196px 1fr 1fr;
+  gap: 16px 24px;
+  width: 823px;
+  margin: 0 auto 44px 98px;
+}
+
+.catalog-filter-group {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.background-form {
+  background: rgba(252, 252, 252, 0.3);
+  border: none;
+  border-radius: 20px;
+  outline: none;
+}
+
+.radio-buttons-group {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+.checkbox-group {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.catalog-filter-title {
+  margin: 0 0 8px 16px;
+}
+
+.filter-page-text {
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+}
+
+        /* Селектор */
+
+.select-control {
+  padding: 8px 41px 8px 16px;
+  cursor: pointer;
+}
+
+        /* Ползунок диапазона цены */
+
+.range {
+  display: flex;
+  align-items: center;
+  height: 16px;
+  padding: 10px 16px 10px 16px;
+}
+
+.range-scale {
+    position: relative;
+    height: 2px;
+    width: 164px;
+    background-color: rgba(86, 92, 102, 0.3);
+}
+
+.range-bar {
+  position: absolute;
+  background-color: rgba(86, 92, 102, 1);
+  height: 2px;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -7px;
+  width: 4px;
+  height: 4px;
+  padding: 2px;
+  border: 6px solid #2D3440;
+  background-color: #FCFCFC;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.toggle-min {
+  left: -8px;
+}
+
+.toggle-max {
+  right: -8px;
+}
+
+        /* Радио кнопки */
+
+.catalog-filter-list, .catalog-filter-list-checkbox {
+  display: flex;
+  margin: 0;
+  padding: 8px 24px 8px 24px;
+  list-style: none;
+}
+
+.catalog-filter-item {
+  padding-left: 24px;
+}
+
+.catalog-filter-item:not(:last-child)  {
+  margin-right: 16px;
+}
+
+.control-checkbox {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.control-input-radio[type="radio"]:checked + .control-mark-radio {
+  border-radius: 50%;
+  border: 1.33px solid #2D3440;
+}
+
+.control-input-radio[type="radio"]:checked + .control-mark-radio::before {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #2D3440;
+  content: "";
+}
+
+.control-input-radio[type="radio"]:focus-visible + .control-mark-radio::after {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  content: "";
+  outline: 2px solid #AF4FFF;
+  outline-offset: 4px;
+}
+
+.control-mark-radio {
+  position: absolute;
+  top: 0;
+  left: -24px;
+  width: 16px;
+  height: 16px;
+  border: 1.33px solid #2D3440;
+  border-radius: 50%;
+}
+
+        /* Чекбоксы */
+
+.catalog-filter-list-checkbox {
+  padding: 10px 24px 10px 24px;
+}
+
+        /* Кнопка фильтра */
+
+.catalog-filter-button {
+  background: rgba(252, 252, 252, 0.3);
+  padding: 10px 54.5px 10px 54.5px;
+  outline: 2px solid #FCFCFC;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-top: auto;
+  border: none;
+}
+
+.catalog-filter-button:hover {
+  background-color: #FCFCFC;
+  outline: 2px solid rgba(252, 252, 252, 0.3);
+}
+
+.catalog-filter-button:active {
+  background-color: rgba(252, 252, 252, 0.5);;
+  outline: none;
+}
+
+.catalog-filter-button:focus-visible {
+  outline: 2px solid rgba(45, 52, 64, 1);
+}
+
+
+/* Список товаров каталога */
