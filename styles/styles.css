@@ -217,6 +217,12 @@ main {
   border-radius: 30px;
 }
 
+.menu-link-current {
+  background-color: #FF4A78;
+  color: #FCFCFC;
+  border: none;
+}
+
 .navigation-menu-link:hover {
   background: rgba(252, 252, 252, 0.5);
   border-radius: 30px;
@@ -523,18 +529,31 @@ main {
 }
 
 .slider-pagination-button {
-  width: 12px;
-  height: 12px;
-  background-color: #FCFCFC;
+  width: 14px;
+  height: 14px;
+  background: rgba(252, 252, 252, 0.3);
   color: #FCFCFC;
-  opacity: 0.3;
   border-radius: 100px;
-  border: none;
   cursor: pointer;
+  border: none;
+  outline: none;
 }
 
 .slider-pagination-button-current {
-  opacity: 1;
+  background: #FCFCFC;
+}
+
+.slider-pagination-button:hover {
+  border: 1px solid #FCFCFC;
+}
+
+.slider-pagination-button:active {
+  background-color: rgba(252, 252, 252, 0.5);
+  border: none;
+}
+
+.slider-pagination-button:focus-visible {
+  border: 1px solid #2D3440;
 }
 
 .slider-social-list {
@@ -1109,6 +1128,96 @@ input::placeholder {
   margin: 32px 0 2px 0;
 }
 
+/* Блок Обратной связи / Модальное окно  */
+
+.modal-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(45, 52, 64, 0.3);
+}
+
+.modal-feedback {
+  width: 442px;
+}
+
+.modal {
+  position: relative;
+  margin: 200px auto 200px auto;
+  padding: 64px;
+  min-height: 417px;
+  background: #FCFCFC;
+  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
+  border-radius: 8px;
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  width: 20px;
+  height: 20px;
+  background-color: #FCFCFC;
+  background-image: url(../images/svg/cross.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.modal-close-button:hover {
+  opacity: 0.6;
+}
+
+.modal-close-button:active {
+  opacity: 0.3;
+}
+
+.modal-close-button:focus-visible {
+  outline: 2px solid #000000;
+  outline-offset: 2px;
+}
+
+.modal-feedback-title {
+  Font-family: "inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px ;
+  line-height: 30px;
+  color: #2D3440;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.field-group-feedback {
+  margin-bottom: 16px;
+}
+
+.modal-form-field-feedback {
+  Font-family: "inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px ;
+  line-height: 20px;
+  color: #B9B9B9;
+  width: 424px;
+  padding: 14px 0 14px 16px;
+  cursor: pointer;
+}
+
+.clarification-field {
+  min-height: 149px;
+}
+
+.modal-feedback-button {
+  margin-top: 16px;
+  margin-left: 292px;
+}
+
 /* footer / Подвал */
 
 .social-block {
@@ -1212,7 +1321,6 @@ input::placeholder {
   border-radius: 0;
 }
 
-
         /* Каталог */
 
 .catalog-navigation {
@@ -1243,12 +1351,39 @@ input::placeholder {
 
 .breadcrumbs-item {
   font-weight: 700;
-  width: 86px;
+}
+
+.breadcrumbs-item:not(:last-child) {
+  padding-right: 20px;
+  margin-right: 8px;
+  background-image: url(../images/svg/chevrons-right.svg);
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .breadcrumbs-link {
+  display: inline-block;
   text-decoration: none;
   color: #2D3440;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #FEAFC3;
+}
+
+.breadcrumbs-link-current {
+  border-bottom: 1px solid #2D3440;;
+}
+
+.breadcrumbs-link:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs-link:active {
+  opacity: 0.3;
+}
+
+.breadcrumbs-link:focus-visible {
+  border-bottom: 1px solid #FCFCFC;
 }
 
         /* Блок фильтрации */
@@ -1338,6 +1473,22 @@ input::placeholder {
   cursor: pointer;
 }
 
+.range-toggle:hover {
+  border: 6px solid #FCFCFC;
+  background-color: #2D3440;
+}
+
+.range-toggle:active {
+  border: 6px solid #2D3440;
+  background-color: #2D3440;
+}
+
+.range-toggle:focus-visible {
+  border: 6px solid #FCFCFC;
+  background-color: #2D3440;
+  outline: 2px solid #2D3440;
+}
+
 .toggle-min {
   left: -8px;
 }
@@ -1359,7 +1510,7 @@ input::placeholder {
   padding-left: 24px;
 }
 
-.catalog-filter-item:not(:last-child)  {
+.catalog-filter-item:not(:last-child) {
   margin-right: 16px;
 }
 
@@ -1404,6 +1555,18 @@ input::placeholder {
   border-radius: 50%;
 }
 
+.control-mark-radio:hover {
+  border:1.33px solid #FCFCFC;
+}
+
+/* .control-mark-radio:checked {
+  border:1.33px solid #FCFCFC;
+} */
+
+.control-mark-radio:disabled {
+  opacity: 0.4;
+}
+
         /* Чекбоксы */
 
 .catalog-filter-list-checkbox {
@@ -1437,4 +1600,134 @@ input::placeholder {
 }
 
 
-/* Список товаров каталога */
+        /* Список товаров каталога */
+
+
+.catalog-products-block {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog-products {
+  padding-bottom: 16px;
+}
+
+
+.catalog-pagination-block {
+  display: grid;
+  grid-template-columns: 390px 390px 390px;
+
+  width: 1170px;
+  margin: 0 98px 40px 98px;
+}
+
+.catalog-button {
+  margin: 41px auto 41px auto;
+}
+
+.pagination-catalog-list {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  margin-left: auto;
+  margin-top: 51px;
+}
+
+.pagination-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+.pagination-item-back {
+  margin-right: 8px;
+  transform: rotate(180deg)
+}
+
+.pagination-item-next {
+  margin-left: 8px;
+}
+
+.pagination-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FEAFC3;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 4px 4px 4px 4px;
+}
+
+.pagination-arrow {
+  display: inline-block;
+  fill: #2D3440;
+  width: 16px;
+  height: 16px;
+}
+
+.pagination-arrow:hover {
+  opacity: 0.6;
+}
+
+.pagination-arrow:active {
+  opacity: 0.3;
+}
+
+.pagination-button:focus-visible {
+  outline: 1px solid #000000;
+  border-radius: 50%;
+}
+
+.pagination-link {
+  line-height: 20px;
+  text-decoration: none;
+  color: #2D3440;
+  cursor: pointer;
+  border-radius: 50%;
+  outline: none;
+}
+
+.pagination-current {
+  background-color: #FCFCFC;
+}
+
+.pagination-link-one {
+  padding: 2px 8px 2px 8px;
+}
+
+.pagination-link-two {
+  padding: 2px 7px 2px 7px;
+}
+
+.pagination-link-three {
+  padding: 2px 6.5px 2px 6.5px;
+}
+
+.pagination-link-four {
+  padding: 2px 6.5px 2px 6.5px;
+}
+
+.pagination-link-five {
+  padding: 2px 7px 2px 7px;
+}
+
+.pagination-link:hover {
+  background: rgba(252, 252, 252, 0.5);
+  border-radius: 50px;
+  border: 1px solid #FEAFC3;
+}
+
+.pagination-link:active {
+  background: rgba(252, 252, 252, 0.5);
+  border: 1px solid #FCFCFC;
+  border-radius: 50%;
+}
+
+.pagination-link:focus-visible {
+  background: rgba(252, 252, 252, 0.3);
+  border: 1px solid #2D3440;
+  border-radius: 50px;
+}
