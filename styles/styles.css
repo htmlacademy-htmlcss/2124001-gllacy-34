@@ -240,6 +240,83 @@ main {
   outline: none;
 }
 
+/* header / Навигация / Список "menu" / popover */
+
+.menu-catalog-popover {
+  position: absolute;
+  top: 78px;
+  left: 252.5px;
+  background-color: #FCFCFC;
+  width: 135px;
+  padding: 8px 0 8px 0;
+  box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
+  border-radius: 4px;
+  z-index: 5;
+}
+
+.catalog-popover-title {
+  Font-family: "inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px ;
+  line-height: 20px;
+  color: #2D3440;
+  width: 103px;
+  margin: 0;
+  padding: 8px 0 12px 16px;
+  border-bottom: 1px solid #B9B9B9;
+}
+
+.catalog-popover-list {
+  padding: 0;
+  margin-top: 4px;
+  list-style: none;
+}
+
+.catalog-popover-item {
+  Font-family: "inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px ;
+  line-height: 20px;
+  padding: 6px 0 6px 0;
+  width: 135px;
+  cursor: pointer;
+}
+
+.catalog-popover-item:hover {
+  background-color: #FFCBD8;
+}
+
+.catalog-popover-item:active {
+  background-color: #FF7799;
+}
+
+.catalog-popover-link {
+  padding: 6px 13.5px 6px 16px;
+  color: #2D3440;
+  text-decoration: none;
+  outline: none;
+}
+
+.creamy {
+  padding-right: 43.5px;
+}
+
+.sherbets {
+  padding-right: 55px;
+}
+
+.melorin {
+  padding-right: 57px;
+}
+
+.catalog-popover-link:focus-visible {
+  background-color: #FF4A78;
+  color: #FCFCFC;
+}
+
+
 /* header / Навигация / Список "user" */
 
 .navigation-user-list {
@@ -1138,6 +1215,7 @@ input::placeholder {
   width: 100%;
   height: 100%;
   background-color: rgba(45, 52, 64, 0.3);
+  z-index: 6;
 }
 
 .modal-feedback {
