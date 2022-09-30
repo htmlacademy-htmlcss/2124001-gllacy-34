@@ -443,16 +443,21 @@ main {
 
 
 /* header / Навигация / Список "user" / basket-popover */
+/* Корзина без товаров */
 
 .user-basket-popover {
+  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
+  background-color: #FCFCFC;
+  border-radius: 4px;
+  z-index: 5;
+}
+
+.empty-basket-popover {
   position: absolute;
   top: 38px;
   left: -165px;
   width: 288px;
   height: 156px;
-  background-color: #FCFCFC;
-  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
-  border-radius: 4px;
   display: none;
 }
 
@@ -462,10 +467,126 @@ main {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
-  text-align: center;
   color: #2D3440;
   margin: 0;
+  padding: 0;
+}
+
+.empty-basket-title {
   padding: 48px 0 48px 0;
+  text-align: center;
+}
+
+/* Корзина с товарами */
+
+.basket-popover {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 345px;
+  min-height: 286px;
+  padding: 48px;
+  display: ;
+}
+
+.full-basket-title {
+  margin-bottom: 32px;
+}
+
+.basket-popover-list {
+  list-style-type: none;
+  padding: 0 0 32px 0;
+  border-bottom: 1px solid #E7E7E7;
+  margin-bottom: 32px;
+}
+
+.basket-popover-item {
+  position: relative;
+  width: 325px;
+  height: 46px;
+  padding-right: 20px;
+  margin-bottom: 24px;
+}
+
+.basket-popover-link {
+  display: flex;
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #2D3440;
+  text-decoration: none;
+}
+
+.basket-popover-link:hover {
+  opacity: 0.6;
+}
+
+.basket-popover-link:active {
+  opacity: 0.3;
+}
+
+.basket-popover-link:focus-visible {
+  outline: 2px solid #2D3440;
+}
+
+.basket-popover-products {
+  width: 46px;
+  height: 46px;
+  margin-right: 16px;
+}
+
+.basket-popover-text {
+  width: 160px;
+  margin-right: 4px;
+}
+
+.popover-products-title {
+  margin: 0 0 4px 0;
+}
+
+.popover-products-description {
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #B9B9B9;
+  margin: 0;
+}
+
+.popover-products-price {
+  margin: 12px 0 12px 0;
+}
+
+.popover-products-bottom {
+  position: absolute;
+  top: 15px;
+  right: 0;
+  background-image: url(../images/svg/cross.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 0;
+  width: 16px;
+  height: 16px;
+  background-color: #FCFCFC;
+}
+
+.basket-popover-checkout {
+  display: flex;
+}
+
+.basket-popover-button {
+  margin-right: 32px;
+}
+
+.popover-checkout-text {
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
 }
 
 /* main / Слайдер */
@@ -525,7 +646,7 @@ main {
   align-items: center;
   top: 45%;
   left: 46.05%;
-  z-index: 5;
+  z-index: 4;
   cursor: pointer;
   background: rgba(252, 252, 252, 0.3);
   border-radius: 50%;
@@ -1315,15 +1436,15 @@ input::placeholder {
   cursor: pointer;
 }
 
-.modal-close-button:hover {
+.modal-close-button:hover, .popover-products-bottom:hover {
   opacity: 0.6;
 }
 
-.modal-close-button:active {
+.modal-close-button:active, .popover-products-bottom:active {
   opacity: 0.3;
 }
 
-.modal-close-button:focus-visible {
+.modal-close-button:focus-visible, .popover-products-bottom:focus-visible {
   outline: 2px solid #000000;
   outline-offset: 2px;
 }
