@@ -336,10 +336,6 @@ main {
   margin-left: 16px;
 }
 
-.user-item-basket {
-  position: relative;
-}
-
 .navigation-contacts-telephone {
   Font-family: "inter";
   font-style: normal;
@@ -416,12 +412,13 @@ main {
 .item-search-popover {
   position: absolute;
   top: 40px;
-  left: -324px;
+  right: 0;
   height: 96px;
   width: 356px;
   background-color: #FCFCFC;
   border-radius: 4px;
   z-index: 5;
+  display: none;
 }
 
 .search-popover-form {
@@ -441,9 +438,87 @@ main {
   border-radius: 4px;
 }
 
+/* header / Навигация / Список "user" / login-popover */
+
+.user-item-login {
+  position: relative;
+}
+
+.user-login-popover {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 324px;
+  height: 250px;
+  background-color: #FCFCFC;
+  padding: 48px 48px 52px 48px;
+  z-index: 5;
+  border-radius: 4px;
+  display: none;
+}
+
+.login-popover-title {
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #2D3440;
+  margin: 0 0 32px 0;
+}
+
+.login-newsletter-form {
+  margin-bottom: 16px;
+}
+
+.login-password-form {
+  margin-bottom: 32px;
+}
+
+.login-field {
+  padding: 14px 80px 14px 16px;
+}
+
+.login-help-links {
+  position: absolute;
+  bottom: 36px;
+  left: 182px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.help-password-link, .registration-link {
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 4px;
+  color: #2D3440;
+  text-decoration: none;
+  border-bottom: 1px solid #2D3440;
+  margin-right: 20px;
+  outline: none;
+}
+
+.help-password-link:hover, .registration-link:hover {
+  opacity: 0.6;
+}
+
+.help-password-link:active, .registration-link:active {
+  opacity: 0.3;
+}
+
+.help-password-link:focus-visible, .registration-link:focus-visible {
+  border-bottom: 1px solid #FF2F64;
+}
 
 /* header / Навигация / Список "user" / basket-popover */
 /* Корзина без товаров */
+
+.user-item-basket {
+  position: relative;
+}
 
 .user-basket-popover {
   box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
@@ -454,8 +529,8 @@ main {
 
 .empty-basket-popover {
   position: absolute;
-  top: 38px;
-  left: -165px;
+  top: 40px;
+  right: 0;
   width: 288px;
   height: 156px;
   display: none;
@@ -486,7 +561,7 @@ main {
   width: 345px;
   min-height: 286px;
   padding: 48px;
-  display: ;
+  display: none;
 }
 
 .full-basket-title {
