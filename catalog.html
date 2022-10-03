@@ -21,8 +21,25 @@
               <!-- Список "menu" -->
 
             <ul class="navigation-menu-list">
-              <li class="navigation-menu-item">
+              <li class="navigation-menu-item menu-item-catalog">
                 <a class="navigation-menu-link menu-link-current" href="catalog.html">Каталог</a>
+                <div class="menu-catalog-popover">
+                  <h2 class="catalog-popover-title">Новинки</h2>
+                  <ul class="catalog-popover-list">
+                    <li class="catalog-popover-item">
+                      <a class="catalog-popover-link creamy" href="#">Сливочное</a>
+                    </li>
+                    <li class="catalog-popover-item">
+                      <a class="catalog-popover-link sherbets" href="#">Щербеты</a>
+                    </li>
+                    <li class="catalog-popover-item">
+                      <a class="catalog-popover-link" href="#">Фруктовый&nbsp;лед</a>
+                    </li>
+                    <li class="catalog-popover-item">
+                      <a class="catalog-popover-link melorin" href="#">Мелорин</a>
+                    </li>
+                  </ul>
+                </div>
               </li>
               <li class="navigation-menu-item">
                 <a class="navigation-menu-link" href="#">Доставка и оплата</a>
@@ -38,20 +55,75 @@
               <li class="navigation-user-item">
                 <a class="navigation-contacts-telephone" href="tel:+78005558628">+7 800 555-86-28</a>
               </li>
-              <li class="navigation-user-item">
+              <li class="navigation-user-item user-item-search">
                 <button class="navigation-user-button user-button-search">
                   <svg alt="Кнопка поиска" width="16" height="16" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.66329 8.18794c0-2.57733 2.08934-4.66666 4.66667-4.66666s4.66664 2.08933 4.66664 4.66666c0 1.25728-.4972 2.39846-1.3057 3.23756a.66988.66988 0 0 0-.0657.0577.66988.66988 0 0 0-.0577.0657c-.83915.8085-1.98028 1.3057-3.23754 1.3057-2.57733 0-4.66667-2.0893-4.66667-4.66666Zm8.41181 4.68796c-1.0265.8211-2.32848 1.312-3.74514 1.312-3.31371 0-6-2.6862-6-5.99996 0-3.31371 2.68629-6 6-6 3.31374 0 6.00004 2.68629 6.00004 6 0 1.41669-.491 2.71866-1.3121 3.74516l2.4501 2.4501c.2604.2604.2604.6825 0 .9428-.2603.2604-.6825.2604-.9428 0l-2.4501-2.4501Z" fill="#2D3440"/></svg>
                 </button>
+                <div class="item-search-popover">
+                  <form class="search-popover-form" action="https://echo.htmlacademy.ru/" method="get">
+                    <input class="search-input" name="search" placeholder="Поиск по сайту" type="search">
+                  </form>
+                </div>
               </li>
-              <li class="navigation-user-item">
+              <li class="navigation-user-item user-item-login">
                 <button class="navigation-user-button">
                   <svg class="user-button-icon" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9 2.52461c0-.36819.29848-.66667.66667-.66667h2.66663a1.9997 1.9997 0 0 1 1.4142.58579 1.9999 1.9999 0 0 1 .5858 1.41421v9.33336c0 .5304-.2107 1.0391-.5858 1.4142-.375.3751-.8837.5858-1.4142.5858H9.66667c-.36819 0-.66667-.2985-.66667-.6667 0-.3682.29848-.6667.66667-.6667h2.66663c.1768 0 .3464-.0702.4714-.1952A.66635.66635 0 0 0 13 13.1913V3.85794a.66637.66637 0 0 0-.1953-.4714.66662.66662 0 0 0-.4714-.19527H9.66667C9.29848 3.19127 9 2.8928 9 2.52461ZM5.86189 4.71987c.26035-.26035.68246-.26035.94281 0l3.3291 3.3291a.6892.6892 0 0 1 .0486.05313.66273.66273 0 0 1 .0804.12379c.0451.08986.0705.19132.0705.29872 0 .10862-.0259.21118-.072.30179a.6671.6671 0 0 1-.0737.11432.66753.66753 0 0 1-.0541.05978l-3.3288 3.3288c-.26035.2604-.68246.2604-.94281 0-.26035-.2603-.26035-.6824 0-.9428l2.19526-2.19523H1.66667C1.29848 9.19127 1 8.8928 1 8.52461s.29848-.66667.66667-.66667h6.39048L5.86189 5.66268c-.26035-.26035-.26035-.68246 0-.94281Z" fill="#2D3440"/></svg>
                   Вход</button>
+                <div class="user-login-popover">
+                  <h2 class="login-popover-title">Личный кабинет</h2>
+                  <form class="login-newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+                    <label for="newsletter-email"><span class="visually-hidden">Ваш e-mail</span></label>
+                    <input class="login-field page-description" placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required="">
+                  </form>
+                  <form class="login-password-form" action="https://echo.htmlacademy.ru/" method="post">
+                    <label for="password"><span class="visually-hidden">Ваш пароль</span></label>
+                    <input class="login-field page-description" placeholder="● ● ● ● ● ●" type="password" name="password" id="password" required="">
+                  </form>
+                  <button class="login-popover-button additional-button">Войти</button>
+                  <div class="login-help-links">
+                    <a class="help-password-link" href="#">Забыли пароль?</a>
+                    <a class="registration-link" href="#">Регистрация</a>
+                  </div>
+                </div>
               </li>
-              <li class="navigation-user-item">
+              <li class="navigation-user-item user-item-basket">
                 <button class="navigation-user-button">
                   <svg class="user-button-icon" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.16667 2.10794c-.3682 0-.66667.29848-.66667.66667 0 .36819.29848.66666.66667.66666h1.77127l.46743 2.33539a.66396.66396 0 0 0 .01063.0531l.96738 4.83334.00012.0006c.08356.42.31212.7972.64571 1.0658.3319.2672.74674.4098 1.17262.4033h5.62067c.4259.0065.8408-.1361 1.1727-.4033.3337-.2687.5623-.6462.6458-1.0664l.001-.005.9271-4.86144a.6669.6669 0 0 0-.1412-.54985.66677.66677 0 0 0-.5137-.2417H4.61072L4.1381 2.64377c-.06236-.31157-.33595-.53583-.6537-.53583H1.16667Zm4.52431 8.29446-.81339-4.06396h8.23081l-.7756 4.06686a.49276.49276 0 0 1-.1737.2856.49257.49257 0 0 1-.3181.1087v-.0002H6.19614v-.0001l-.01277.0003a.49245.49245 0 0 1-.31807-.1087.4926.4926 0 0 1-.17413-.2876l-.00019-.0009Zm-1.13359 3.961c0-.688.55771-1.2457 1.24568-1.2457.68798 0 1.24569.5577 1.24569 1.2457 0 .6879-.55771 1.2457-1.24569 1.2457-.68797 0-1.24568-.5578-1.24568-1.2457Zm6.37331 0c0-.688.5577-1.2457 1.2457-1.2457.688 0 1.2457.5577 1.2457 1.2457 0 .6879-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5578-1.2457-1.2457Z" fill="#2D3440"/></svg>
                   2 товара</button>
+                  <div class="user-basket-popover empty-basket-popover">
+                    <h2 class="basket-popover-title empty-basket-title">Ваша корзина пока пуста</h2>
+                  </div>
+                  <div class="user-basket-popover basket-popover">
+                    <h2 class="basket-popover-title full-basket-title">Корзина</h2>
+                    <ul class="basket-popover-list">
+                      <li class="basket-popover-item">
+                        <a class="basket-popover-link" href="#">
+                          <img class="basket-popover-products" src="./images/png/products-raspberry.png">
+                          <div class="basket-popover-text">
+                            <h3 class="popover-products-title">Малинка</h3>
+                            <p class="popover-products-description">1 кг х 310 ₽</p>
+                          </div>
+                          <p class="popover-products-price">310 ₽</p>
+                        </a>
+                        <button class="popover-products-bottom .close-button"></button>
+                      </li>
+                      <li class="basket-popover-item">
+                        <a class="basket-popover-link" href="#">
+                          <img class="basket-popover-products" src="./images/png/products-bubblegum.png">
+                          <div class="basket-popover-text">
+                            <h3 class="popover-products-title">Бабл-гам</h3>
+                            <p class="popover-products-description">1,5 кг х 320 ₽</p>
+                          </div>
+                          <p class="popover-products-price">480 ₽</p>
+                        </a>
+                        <button class="popover-products-bottom .close-button"></button>
+                      </li>
+                    </ul>
+                    <div class="basket-popover-checkout">
+                      <button class="basket-popover-button additional-button">Оформить заказ</button>
+                      <p class="popover-checkout-text">Итого: 790 ₽</p>
+                    </div>
+                  </div>
               </li>
             </ul>
           </div>
@@ -137,37 +209,42 @@
             <h3 class="catalog-filter-title filter-page-text">Наполнители:</h3>
             <ul class="catalog-filter-list-checkbox background-form">
               <li class="catalog-filter-item">
-                <label class="control-checkbox filter-page-text">
+                <label class="filler-control-label filter-page-text">
                   <input class="visually-hidden control-input" type="checkbox" name="black" checked="">
-                  <span class="control-mark"></span>
+                  <svg class="control-mark" width="16" height="16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.6152 1.6153a.9628.9628 0 0 1 .6807-.282h11.407c.2418 0 .3402.0286.3947.0526.0577.0255.1306.074.2861.2294.2072.2072.282.4323.282.6808v11.3686a.658.658 0 0 0-.0011.0373.9626.9626 0 0 1-.9627.9628H2.2959a.963.963 0 0 1-.9627-.9628V2.296a.9628.9628 0 0 1 .282-.6807ZM15.838 14.5437a2.2962 2.2962 0 0 1-2.1362 1.4544H2.2959A2.296 2.296 0 0 1 0 13.702V2.296A2.2961 2.2961 0 0 1 1.4584.1583.664.664 0 0 1 1.8897 0h11.8132c.3375 0 .6429.038.9336.1664.2875.127.5011.3172.69.5061.4815.4816.6725 1.0574.6725 1.6236v11.8133a.664.664 0 0 1-.1609.4343Z"/></svg>
+                  <svg class="control-mark selected-control-mark" width="16" height="16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.61532 1.61526c.18048-.18055.42519-.28193.6803-.28193h8.95888c.3682 0 .6667-.29847.6667-.666663C11.9212.298477 11.6227 0 11.2545 0H2.29562C1.68671 0 1.10279.241993.672314.672654.241845 1.1033.000061 1.68733.000061 2.29624V13.7033c0 .6089.241784 1.1929.672253 1.6236.430476.4306 1.014396.6726 1.623306.6726H13.6978c.6089 0 1.1929-.242 1.6233-.6726.4305-.4307.6723-1.0147.6723-1.6236V7.99976c0-.36819-.2985-.66666-.6667-.66666-.3682 0-.6666.29847-.6666.66666v5.70354c0 .2555-.1015.5004-.282.681-.1804.1805-.4252.2819-.6803.2819H2.29562c-.25511 0-.49982-.1014-.6803-.2819-.18048-.1806-.28193-.4255-.28193-.681V2.29624c0-.25547.10145-.50042.28193-.68098Zm14.20138.32514c.2532-.2673.2418-.68925-.0255-.942467-.2673-.253213-.6893-.241797-.9425.025497L7.61408 8.66042l-1.8316-1.93347c-.25321-.26729-.67516-.27871-.94246-.0255-.2673.25322-.27871.67517-.0255.94247L7.1301 10.0883c.1259.1329.30091.2082.48398.2082s.35808-.0753.48398-.2082l7.71864-8.1479Z"/></svg>
                   шоколадные
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control-checkbox filter-page-text">
                   <input class="visually-hidden control-input" type="checkbox" name="black" checked="">
-                  <span class="control-mark"></span>
+                  <svg class="control-mark" width="16" height="16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.6152 1.6153a.9628.9628 0 0 1 .6807-.282h11.407c.2418 0 .3402.0286.3947.0526.0577.0255.1306.074.2861.2294.2072.2072.282.4323.282.6808v11.3686a.658.658 0 0 0-.0011.0373.9626.9626 0 0 1-.9627.9628H2.2959a.963.963 0 0 1-.9627-.9628V2.296a.9628.9628 0 0 1 .282-.6807ZM15.838 14.5437a2.2962 2.2962 0 0 1-2.1362 1.4544H2.2959A2.296 2.296 0 0 1 0 13.702V2.296A2.2961 2.2961 0 0 1 1.4584.1583.664.664 0 0 1 1.8897 0h11.8132c.3375 0 .6429.038.9336.1664.2875.127.5011.3172.69.5061.4815.4816.6725 1.0574.6725 1.6236v11.8133a.664.664 0 0 1-.1609.4343Z"/></svg>
+                  <svg class="control-mark selected-control-mark" width="16" height="16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.61532 1.61526c.18048-.18055.42519-.28193.6803-.28193h8.95888c.3682 0 .6667-.29847.6667-.666663C11.9212.298477 11.6227 0 11.2545 0H2.29562C1.68671 0 1.10279.241993.672314.672654.241845 1.1033.000061 1.68733.000061 2.29624V13.7033c0 .6089.241784 1.1929.672253 1.6236.430476.4306 1.014396.6726 1.623306.6726H13.6978c.6089 0 1.1929-.242 1.6233-.6726.4305-.4307.6723-1.0147.6723-1.6236V7.99976c0-.36819-.2985-.66666-.6667-.66666-.3682 0-.6666.29847-.6666.66666v5.70354c0 .2555-.1015.5004-.282.681-.1804.1805-.4252.2819-.6803.2819H2.29562c-.25511 0-.49982-.1014-.6803-.2819-.18048-.1806-.28193-.4255-.28193-.681V2.29624c0-.25547.10145-.50042.28193-.68098Zm14.20138.32514c.2532-.2673.2418-.68925-.0255-.942467-.2673-.253213-.6893-.241797-.9425.025497L7.61408 8.66042l-1.8316-1.93347c-.25321-.26729-.67516-.27871-.94246-.0255-.2673.25322-.27871.67517-.0255.94247L7.1301 10.0883c.1259.1329.30091.2082.48398.2082s.35808-.0753.48398-.2082l7.71864-8.1479Z"/></svg>
                   сахарные посыпки
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control-checkbox filter-page-text">
                   <input class="visually-hidden control-input" type="checkbox" name="blue">
-                  <span class="control-mark" tabindex="0"></span>
+                  <svg class="control-mark" width="16" height="16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.6152 1.6153a.9628.9628 0 0 1 .6807-.282h11.407c.2418 0 .3402.0286.3947.0526.0577.0255.1306.074.2861.2294.2072.2072.282.4323.282.6808v11.3686a.658.658 0 0 0-.0011.0373.9626.9626 0 0 1-.9627.9628H2.2959a.963.963 0 0 1-.9627-.9628V2.296a.9628.9628 0 0 1 .282-.6807ZM15.838 14.5437a2.2962 2.2962 0 0 1-2.1362 1.4544H2.2959A2.296 2.296 0 0 1 0 13.702V2.296A2.2961 2.2961 0 0 1 1.4584.1583.664.664 0 0 1 1.8897 0h11.8132c.3375 0 .6429.038.9336.1664.2875.127.5011.3172.69.5061.4815.4816.6725 1.0574.6725 1.6236v11.8133a.664.664 0 0 1-.1609.4343Z"/></svg>
+                  <svg class="control-mark selected-control-mark" width="16" height="16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.61532 1.61526c.18048-.18055.42519-.28193.6803-.28193h8.95888c.3682 0 .6667-.29847.6667-.666663C11.9212.298477 11.6227 0 11.2545 0H2.29562C1.68671 0 1.10279.241993.672314.672654.241845 1.1033.000061 1.68733.000061 2.29624V13.7033c0 .6089.241784 1.1929.672253 1.6236.430476.4306 1.014396.6726 1.623306.6726H13.6978c.6089 0 1.1929-.242 1.6233-.6726.4305-.4307.6723-1.0147.6723-1.6236V7.99976c0-.36819-.2985-.66666-.6667-.66666-.3682 0-.6666.29847-.6666.66666v5.70354c0 .2555-.1015.5004-.282.681-.1804.1805-.4252.2819-.6803.2819H2.29562c-.25511 0-.49982-.1014-.6803-.2819-.18048-.1806-.28193-.4255-.28193-.681V2.29624c0-.25547.10145-.50042.28193-.68098Zm14.20138.32514c.2532-.2673.2418-.68925-.0255-.942467-.2673-.253213-.6893-.241797-.9425.025497L7.61408 8.66042l-1.8316-1.93347c-.25321-.26729-.67516-.27871-.94246-.0255-.2673.25322-.27871.67517-.0255.94247L7.1301 10.0883c.1259.1329.30091.2082.48398.2082s.35808-.0753.48398-.2082l7.71864-8.1479Z"/></svg>
                   фрукты
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control-checkbox filter-page-text">
                   <input class="visually-hidden control-input" type="checkbox" name="red">
-                  <span class="control-mark" tabindex="0"></span>
+                  <svg class="control-mark" width="16" height="16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.6152 1.6153a.9628.9628 0 0 1 .6807-.282h11.407c.2418 0 .3402.0286.3947.0526.0577.0255.1306.074.2861.2294.2072.2072.282.4323.282.6808v11.3686a.658.658 0 0 0-.0011.0373.9626.9626 0 0 1-.9627.9628H2.2959a.963.963 0 0 1-.9627-.9628V2.296a.9628.9628 0 0 1 .282-.6807ZM15.838 14.5437a2.2962 2.2962 0 0 1-2.1362 1.4544H2.2959A2.296 2.296 0 0 1 0 13.702V2.296A2.2961 2.2961 0 0 1 1.4584.1583.664.664 0 0 1 1.8897 0h11.8132c.3375 0 .6429.038.9336.1664.2875.127.5011.3172.69.5061.4815.4816.6725 1.0574.6725 1.6236v11.8133a.664.664 0 0 1-.1609.4343Z"/></svg>
+                  <svg class="control-mark selected-control-mark" width="16" height="16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.61532 1.61526c.18048-.18055.42519-.28193.6803-.28193h8.95888c.3682 0 .6667-.29847.6667-.666663C11.9212.298477 11.6227 0 11.2545 0H2.29562C1.68671 0 1.10279.241993.672314.672654.241845 1.1033.000061 1.68733.000061 2.29624V13.7033c0 .6089.241784 1.1929.672253 1.6236.430476.4306 1.014396.6726 1.623306.6726H13.6978c.6089 0 1.1929-.242 1.6233-.6726.4305-.4307.6723-1.0147.6723-1.6236V7.99976c0-.36819-.2985-.66666-.6667-.66666-.3682 0-.6666.29847-.6666.66666v5.70354c0 .2555-.1015.5004-.282.681-.1804.1805-.4252.2819-.6803.2819H2.29562c-.25511 0-.49982-.1014-.6803-.2819-.18048-.1806-.28193-.4255-.28193-.681V2.29624c0-.25547.10145-.50042.28193-.68098Zm14.20138.32514c.2532-.2673.2418-.68925-.0255-.942467-.2673-.253213-.6893-.241797-.9425.025497L7.61408 8.66042l-1.8316-1.93347c-.25321-.26729-.67516-.27871-.94246-.0255-.2673.25322-.27871.67517-.0255.94247L7.1301 10.0883c.1259.1329.30091.2082.48398.2082s.35808-.0753.48398-.2082l7.71864-8.1479Z"/></svg>
                   сиропы
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control-checkbox filter-page-text">
                   <input class="visually-hidden control-input" type="checkbox" name="pink">
-                  <span class="control-mark" tabindex="0"></span>
+                  <svg class="control-mark" width="16" height="16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.6152 1.6153a.9628.9628 0 0 1 .6807-.282h11.407c.2418 0 .3402.0286.3947.0526.0577.0255.1306.074.2861.2294.2072.2072.282.4323.282.6808v11.3686a.658.658 0 0 0-.0011.0373.9626.9626 0 0 1-.9627.9628H2.2959a.963.963 0 0 1-.9627-.9628V2.296a.9628.9628 0 0 1 .282-.6807ZM15.838 14.5437a2.2962 2.2962 0 0 1-2.1362 1.4544H2.2959A2.296 2.296 0 0 1 0 13.702V2.296A2.2961 2.2961 0 0 1 1.4584.1583.664.664 0 0 1 1.8897 0h11.8132c.3375 0 .6429.038.9336.1664.2875.127.5011.3172.69.5061.4815.4816.6725 1.0574.6725 1.6236v11.8133a.664.664 0 0 1-.1609.4343Z"/></svg>
+                  <svg class="control-mark selected-control-mark" width="16" height="16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.61532 1.61526c.18048-.18055.42519-.28193.6803-.28193h8.95888c.3682 0 .6667-.29847.6667-.666663C11.9212.298477 11.6227 0 11.2545 0H2.29562C1.68671 0 1.10279.241993.672314.672654.241845 1.1033.000061 1.68733.000061 2.29624V13.7033c0 .6089.241784 1.1929.672253 1.6236.430476.4306 1.014396.6726 1.623306.6726H13.6978c.6089 0 1.1929-.242 1.6233-.6726.4305-.4307.6723-1.0147.6723-1.6236V7.99976c0-.36819-.2985-.66666-.6667-.66666-.3682 0-.6666.29847-.6666.66666v5.70354c0 .2555-.1015.5004-.282.681-.1804.1805-.4252.2819-.6803.2819H2.29562c-.25511 0-.49982-.1014-.6803-.2819-.18048-.1806-.28193-.4255-.28193-.681V2.29624c0-.25547.10145-.50042.28193-.68098Zm14.20138.32514c.2532-.2673.2418-.68925-.0255-.942467-.2673-.253213-.6893-.241797-.9425.025497L7.61408 8.66042l-1.8316-1.93347c-.25321-.26729-.67516-.27871-.94246-.0255-.2673.25322-.27871.67517-.0255.94247L7.1301 10.0883c.1259.1329.30091.2082.48398.2082s.35808-.0753.48398-.2082l7.71864-8.1479Z"/></svg>
                   джемы
                 </label>
               </li>
@@ -177,6 +254,7 @@
         </form>
 
         <!-- Блок списка товаров каталога -->
+
         <div class="catalog-products-block">
           <div class="catalog-products popular-products">
             <h2 class="visually-hidden">Cписок товаров</h2>
@@ -437,6 +515,26 @@
           </div>
         </div>
       </footer>
+
+      <div class="modal-container">
+        <div class="modal modal-feedback">
+          <button class="modal-close-button close-button"></button>
+          <h2 class="modal-feedback-title">Мы обязательно ответим вам!</h2>
+          <div class="field-group-feedback">
+            <label class="modal-form-title visually-hidden" for="info-form-name">Ваше имя:</label>
+            <input class="modal-form-field-feedback name-field" type="text" id="name" name="name" placeholder="Имя и фамилия">
+          </div>
+          <div class="field-group-feedback">
+            <label class="modal-form-title visually-hidden" for="info-form-email">Ваш e-mail:</label>
+            <input class="modal-form-field-feedback email-field" type="email" id="modal-input-email" name="email" placeholder="email@example.com">
+          </div>
+          <div class="field-group-feedback field-group-clarification">
+            <label class="modal-form-title visually-hidden" for="info-form-clarification">Что нужно привезти:</label>
+            <input class="modal-form-field-feedback clarification-field" type="text" id="clarification" name="clarification" placeholder="В свободной форме">
+          </div>
+          <button class="modal-feedback-button additional-button">Отправить</button>
+        </div>
+      </div>
     </div>
   </body>
 </html>

@@ -1777,8 +1777,18 @@ input::placeholder {
         /* Селектор */
 
 .select-control {
-  padding: 8px 41px 8px 16px;
+  padding: 7px 39px 7px 15px;
   cursor: pointer;
+  border: 2px solid rgba(252, 252, 252, 0);
+}
+
+.select-control:hover {
+  background: rgba(252, 252, 252, 0.5);
+}
+
+.select-control:active {
+  background: rgba(252, 252, 252, 0.4);
+  border: 2px solid #FCFCFC;
 }
 
         /* Ползунок диапазона цены */
@@ -1883,8 +1893,6 @@ input::placeholder {
   width: 16px;
   height: 16px;
   content: "";
-  outline: 2px solid #AF4FFF;
-  outline-offset: 4px;
 }
 
 .control-mark-radio {
@@ -1913,8 +1921,47 @@ input::placeholder {
 
 .catalog-filter-list-checkbox {
   padding: 10px 24px 10px 24px;
+  list-style-type: none;
 }
 
+.filler-control-label {
+  font-size: 14px;
+  line-height: 20px;
+  color: #2d3440;
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.control-mark {
+  position: absolute;
+  top: 3px;
+  left: -24px;
+}
+
+.selected-control-mark {
+  display: none;
+}
+
+.control-input[type="checkbox"]:checked ~ .control-mark {
+  display: none;
+}
+
+.control-input[type="checkbox"]:checked ~ .selected-control-mark {
+  display: block;
+}
+
+.control-input[type="checkbox"]:hover ~ .control-mark {
+  color: #fcfcfc;
+}
+
+.control-input[type="checkbox"]:focus-visible ~ .control-mark {
+  color: #fcfcfc;
+}
+
+.control-input[type="checkbox"]:disabled ~ .control-mark {
+  opacity: 0.5;
+}
         /* Кнопка фильтра */
 
 .catalog-filter-button {
