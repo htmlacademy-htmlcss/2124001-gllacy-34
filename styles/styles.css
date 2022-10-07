@@ -188,6 +188,10 @@ main {
   border-radius: 30px;
 }
 
+.logo-link-catalog {
+  margin: 2px 0 0 0;
+}
+
 .navigation-menu {
   display: flex;
   justify-content: space-between;
@@ -223,6 +227,7 @@ main {
 }
 
 .menu-link-current {
+  padding: 8px 16px 8px 16px;
   background-color: #FF4A78;
   color: #FCFCFC;
   border: none;
@@ -328,10 +333,13 @@ main {
 .navigation-user-list {
   display: flex;
   align-items: center;
-  margin: 0;
-  margin-left: 170px;
+  margin: 0 0 0 170px;
   padding: 0;
   list-style-type: none;
+}
+
+.navigation-user-list-catalog {
+  margin-left: 170px;
 }
 
 .navigation-user-item {
@@ -1605,6 +1613,10 @@ input::placeholder {
   padding: 45px 0 48px 0;
 }
 
+.social-block-catalog {
+  padding-top: 48px;
+}
+
 .social-list {
   display: flex;
   list-style-type: none;
@@ -1708,7 +1720,7 @@ input::placeholder {
         /* Каталог */
 
 .catalog-navigation {
-  margin-bottom: 32px;
+  margin-bottom: 31px;
 }
 
 .page-filter-text {
@@ -1734,7 +1746,12 @@ input::placeholder {
 }
 
 .breadcrumbs-item {
+  font-family: "inter";
+  font-style: normal;
   font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
 }
 
 .breadcrumbs-item:not(:last-child) {
@@ -1774,8 +1791,9 @@ input::placeholder {
 
 .catalog-filter {
   display: grid;
-  grid-template-columns: 196px 196px 1fr 1fr;
-  gap: 16px 24px;
+  grid-template-columns: 196px 196px 165px 1fr;
+  gap: 14px 24px;
+
   width: 823px;
   margin: 0 auto 44px 98px;
 }
@@ -1857,7 +1875,7 @@ input::placeholder {
 
 .range-toggle {
   position: absolute;
-  top: -7px;
+  top: -7.5px;
   width: 4px;
   height: 4px;
   padding: 2px;
@@ -1884,11 +1902,11 @@ input::placeholder {
 }
 
 .toggle-min {
-  left: -8px;
+  left: -16px;
 }
 
 .toggle-max {
-  right: -8px;
+  right: -16px;
 }
 
         /* Радио кнопки */
@@ -1921,8 +1939,8 @@ input::placeholder {
 
 .control-input-radio[type="radio"]:checked + .control-mark-radio::before {
   position: absolute;
-  top: 5px;
-  left: 5px;
+  top: 4px;
+  left: 4px;
   width: 6px;
   height: 6px;
   border-radius: 50%;
@@ -1939,10 +1957,10 @@ input::placeholder {
 
 .control-mark-radio {
   position: absolute;
-  top: 0;
+  top: 1.5px;
   left: -24px;
-  width: 16px;
-  height: 16px;
+  width: 13px;
+  height: 13px;
   border: 1.33px solid #2D3440;
   border-radius: 50%;
 }
@@ -1962,7 +1980,7 @@ input::placeholder {
         /* Чекбоксы */
 
 .catalog-filter-list-checkbox {
-  padding: 10px 24px 10px 24px;
+  padding: 10px 20px 10px 24px;
   list-style-type: none;
 }
 
@@ -2008,11 +2026,12 @@ input::placeholder {
 
 .catalog-filter-button {
   background: rgba(252, 252, 252, 0.3);
-  padding: 10px 54.5px 10px 54.5px;
+  padding: 9px 40.5px 9px 40.5px;
   outline: 2px solid #FCFCFC;
   cursor: pointer;
   border-radius: 20px;
   margin-top: auto;
+  margin-left: -10px;
   border: none;
 }
 
@@ -2043,6 +2062,9 @@ input::placeholder {
   padding-bottom: 16px;
 }
 
+.catalog-products-list {
+  row-gap: 39px;
+}
 
 .catalog-pagination-block {
   display: grid;
@@ -2053,7 +2075,9 @@ input::placeholder {
 }
 
 .catalog-button {
-  margin: 41px auto 41px auto;
+  margin: 41px 110px 41px auto;
+  padding-left: 34px;
+  padding-right: 34px;
 }
 
 .pagination-catalog-list {
@@ -2062,6 +2086,7 @@ input::placeholder {
   margin: 0;
   margin-left: auto;
   margin-top: 51px;
+  margin-right: -4px;
 }
 
 .pagination-item {
@@ -2078,7 +2103,7 @@ input::placeholder {
 }
 
 .pagination-item-next {
-  margin-left: 8px;
+  margin-left: 3px;
 }
 
 .pagination-button {
