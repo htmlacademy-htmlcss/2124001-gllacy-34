@@ -476,16 +476,13 @@ main {
   margin: 0 0 32px 0;
 }
 
-.login-newsletter-form {
-  margin-bottom: 18px;
-}
-
-.login-password-form {
-  margin-bottom: 32px;
+.login-field {
+  padding: 10px 82px 10px 14px;
 }
 
 .login-field {
   padding: 10px 82px 10px 14px;
+  margin-bottom: 18px;
 }
 
 .login-help-links {
@@ -520,6 +517,10 @@ main {
 
 .help-password-link:focus-visible, .registration-link:focus-visible {
   border-bottom: 1px solid #FF2F64;
+}
+
+.login-popover-button {
+  margin-top: 14px;
 }
 
 /* header / Навигация / Список "user" / basket-popover */
@@ -737,8 +738,8 @@ main {
   position: absolute;
   display: flex;
   align-items: center;
-  top: 46%;
-  left: 46.2%;
+  top: 257px;
+  left: 542px;
   z-index: 4;
   cursor: pointer;
   background: rgba(252, 252, 252, 0.3);
@@ -1390,16 +1391,20 @@ input::placeholder {
 }
 
 .delivery-form {
+  position: relative;
   display: grid;
   grid-template-columns: 117px 287px; /* Можно сделать repeat (2, 360px); */
   gap: 16px;
   row-gap: 20px;
-  margin-bottom: 32px;
 }
 
 .field-group {
   display: flex;
   flex-direction: column;
+}
+.field-group-address {
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .modal-form-lable {
@@ -1454,8 +1459,11 @@ input::placeholder {
 }
 
 .button-delivery {
-  text-align: center;
-  margin-left: 135px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  width: 150px;
+  margin: 11px 0 0 4px;
+
 }
 
 
@@ -1631,7 +1639,6 @@ input::placeholder {
   list-style-type: none;
   padding: 0;
   margin: 0 0 0 98px;
-  row-gap: -10px;
   height: 55px;
 }
 
