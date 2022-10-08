@@ -571,7 +571,7 @@ main {
   width: 345px;
   min-height: 286px;
   padding: 48px;
-  display: none;
+  display: ;
 }
 
 .full-basket-title {
@@ -1463,7 +1463,6 @@ input::placeholder {
   grid-column-end: 3;
   width: 150px;
   margin: 11px 0 0 4px;
-
 }
 
 
